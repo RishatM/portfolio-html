@@ -59,7 +59,7 @@ $(document).ready(function(){
         var w_top = $(window).scrollTop();
         var e_top = $("#about__content").offset().top;
 
-        console.log(w_top + " " + e_top);
+        // console.log(w_top + " " + e_top);
 
         if(w_top >= e_top){
 
@@ -110,7 +110,7 @@ $(document).ready(function(){
         var w_top = $(window).scrollTop();
         var e_top = $(".services__content .about__title h3").offset().top;
 
-        console.log(w_top + " " + e_top);
+        // console.log(w_top + " " + e_top);
 
         if(w_top >= e_top){
 
@@ -162,13 +162,13 @@ $(document).ready(function(){
 });
 
 // GALLERY POPUP
-$(".works__inner").magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    gallery:{
-        enabled: true
-    }
-});
+// $(".works__inner").magnificPopup({
+//     delegate: 'a',
+//     type: 'image',
+//     gallery:{
+//         enabled: true
+//     }
+// });
 // GALLERY POPUP END
 
 
@@ -195,7 +195,7 @@ $(document).ready(function(){
 
         var w_top = $(window).scrollTop();
         var e_top = $("#about__content").offset().top;
-        console.log(w_top + " " + e_top);
+        // console.log(w_top + " " + e_top);
         if(w_top >= e_top){
             $(".scrollTop").css("opacity", "1");
         }
