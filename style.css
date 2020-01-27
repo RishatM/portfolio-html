@@ -356,7 +356,6 @@ h6{
     left: 0;
     box-shadow: -12px 0px 4px 14px rgba(0, 0, 0, 0.1);
 }
-
 .menu .logo{
     width: 100%;
     padding: 50px 0;
@@ -367,9 +366,44 @@ h6{
     transition: all .3s;
 }
 
-.menu .logo img{
-    max-width: 107px;
-    width: 100%;
+.menu .logo a{
+      text-decoration: none;
+}
+.menu .logo__name{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Montserrat', sans-serif;  
+}
+.menu .logo__name:hover{
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+@-moz-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
 }
 
 .menu .nav{
@@ -476,33 +510,31 @@ h6{
 .header__content{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all .3s;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-
 .header__content::after{
     content: '';
     display: block;
     position: absolute;
-    width: 95%;
-    height: 98%;
+    width: 100%;
+    height: 100%;
     background-image: url('images/hero-bg2.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom right;
 }
-
 .header__title{
     color: #fff;
     z-index: 1;
     max-width: 1270px;
-    padding: 0 10px;
-   
+    padding: 0 10px;   
 }
 
 .header__title h1{

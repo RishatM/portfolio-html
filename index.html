@@ -18,6 +18,13 @@
     <script src="https://kit.fontawesome.com/a60e455f2f.js"></script>
     <!-- popup css -->
     <!-- <link rel="stylesheet" href="css/magnific-popup.min.css"> -->
+    <script 
+        src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.6/viewer.js"
+        data-option="{|environment|:{|gradient|:|radial|,|sensitivity|:0.12,|colorStart|:[0,0,0,0],|colorEnd|:[0,1,1,0]},
+        |particle|:{|life|:7,|power|:0.007,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/fire_02.png|,
+        |number|:600,|colorStart|:[255,255,255],|colorEnd|:[255,255,255],|sizeStart|:0.06,|sizeEnd|:0.10,
+        |direction1|:{|x|:100,|y|:0,|z|:0},|direction2|:{|x|:0,|y|:-100,|z|:0}}}"
+        data-container="header__content"></script>
 
 </head>
 <body>
@@ -44,7 +51,7 @@
             </div>
             <div class="Sent-title">
                 <span>Your message was sent successfully</span>
-                <p>Our team will respond to you in free time, Thank you</p>
+                <p>I will respond to you as soon as possible, Thank you</p>
             </div>
         </div>
     </div>
@@ -64,9 +71,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
     <div id="mob_nav" class="mob_nav">
-        <div class="nav"> <!-- Here is mobile menu -->
+        <div class="nav"> 
             <div class="mobMenu">
                 <a href="#Home">Home</a>
                 <a href="#about__content">About</a>
@@ -75,7 +82,7 @@
                 <a href="#contact">Contact</a>
             </div> 
         </div>
-        <div class="social"><!-- Here is your social link. Just change href value to your link path. -->
+        <div class="social">
             <a title="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
             <a title="twitter" href="#"><i class="fab fa-twitter"></i></a>
             <a title="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -88,9 +95,10 @@
     <!-- CONTENT -->
     <!-- LEFTPART -->
     <div class="menu" id="Menu">
-        <div class="logo" id="logo">
+        <div class="logo"
+             id="logo">
             <a href="index.html">
-                <img src="images/logo2.png" alt="logo"> <!-- Here is logo -->
+                <span class="logo__name">RM</span>
             </a>
         </div>
         <div class="nav" id="nav">
@@ -102,7 +110,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="social" id="social"><!-- Here is your social link. Just change href value to your link path. -->
+        <div class="social" id="social">
             <a title="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
             <a title="twitter" href="#"><i class="fab fa-twitter"></i></a>
             <a title="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -117,10 +125,11 @@
 
     <!-- RIGHTPART -->
     <div class="content" id="content">
-
-        <!-- HEADER -->
-        <header class="header" id="Home">  
-            <div class="header__content" id="header__content">
+    <!-- HEADER -->
+        <header class="header" id="Home">
+            <div class="header__content__stars" id="header__content__stars">
+            </div>
+            <div class="header__content" id="header__content">                
                 <div class="header__title">
                     <h1>Rishat M</h1>
                     <h2>Hello I'm <span class="typing"></span></h2>
@@ -129,14 +138,13 @@
                     <a href="#about__content">
                         <i class="fas fa-angle-double-down"></i>
                     </a>
-                </div>
-            </div>
-            <div id="particles-js"></div>
+                </div>         
+            </div>          
+            <!-- <div id="particles-js"></div> -->
         </header>
         <!-- /HEADER -->
 
         <section class="Section">
-
             <!-- ABOUT -->
             <div class="about__content" id="about__content">
                 <div class="about__title">
@@ -484,10 +492,10 @@
                 </div>
                 <div class="contact__conte">
                     <div class="info-contact">
-                        <p>Kharkov Ukraine</p> <!-- Here is your city-->
-                        <a href="#">myMail@gmail.com</a> <!-- Here is your email-->
-                        <a href="#">+380 00 000 0000</a> <!-- Here is your phone-->
-                        <div class="contact-social"><!-- Here is your social link. Just change href value to your link path. -->
+                        <p>Kharkov Ukraine</p> 
+                        <a href="#">myMail@gmail.com</a> 
+                        <a href="#">+380 00 000 0000</a> 
+                        <div class="contact-social">
                             <a title="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a title="twitter" href="#"><i class="fab fa-twitter"></i></a>
                             <a title="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -498,8 +506,8 @@
                     <div class="contact-form">
                         <form name="MyForm">
                             <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="Site Name"> <!--Here is your site name-->
-                            <input type="hidden" name="admin_email" value="vladbelevtsovdaime@gmail.com"> <!--Here is your email-->
+                            <input type="hidden" name="project_name" value="Site Name"> 
+                            <input type="hidden" name="admin_email" value="vladbelevtsovdaime@gmail.com"> 
                             <input type="hidden" name="form_subject" value="Form">
                             <!-- /Hidden Required Fields -->
                             <div class="form-name">
